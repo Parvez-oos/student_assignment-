@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+    background:linear-gradient(45deg,#384B70, #507687);
+    font-family: 'Arial', sans-serif;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 45px;
+    font-size: 30px;
+    color: #333;
+    
+}
+.button{
+    display: flex;
+}
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2>Registration Form</h2>
+        <form>
+            <!-- Full Name and Username -->
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter full name" required>
+            </div>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter username" required>
+            </div>
+
+            <!-- Email and Phone Number -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required>
+            </div>
+
+            <!-- Password and Confirm Password -->
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm password" required>
+            </div>
+
+            <!-- Gender -->
+            <div class="form-group-full">
+                <label>Gender:</label>
+                <div class="gender-group">
+                    <label>
+                        <input type="radio" name="gender" value="male" required> Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female"> Female
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="other"> Other
+                    </label>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="button">
+                <button type="submit" class="btn-submit">Cancel</button>
+                <button type="submit" class="btn-submit-btn">Submit</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
